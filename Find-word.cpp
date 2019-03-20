@@ -1,47 +1,7 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
-int main () 
-{
-	cout<<"\t\t\t\t\t    ------------------------ \n";
-	cout<<"\t\t\t\t\t   |  PROGRAM MENCARI KATA  |\n";
-	cout<<"\t\t\t\t\t    ------------------------ \n";
-	cout<<"\n\t\t\t\t\t              Oleh\n\n";
-	cout<<"\n\n\t\t\t\t\t     Rifqi Syamsu Zulkarnain\n\t\t\t\t\t\t    1817051032\n\n";
-	cout<<"\n\n\t\t\t\t\t         Rifqi Adiyatma\n\t\t\t\t\t\t    1817051055\n";
-	cout<<"\n\n\t\t\t\t\t      Tommy Ferdiansyah A \n\t\t\t\t\t\t    1817051072\n\n";
-	cout<<"\n\n\t\t\t\t\t     Gilang Rahman Affandi\n\t\t\t\t\t\t    1817051075\n";
-	system ("pause");
-	system ("cls");
-	cout<<"\t\t\t\t\t\t    ----------- \n";
-	cout<<"\t\t\t\t\t\t   | FIND WORD |\n";
-	cout<<"\t\t\t\t\t\t    ----------- \n";
-	char find[15][15]=  { {'t','g','b','w','w','i','n','t','e','r','w','s','e','s','n'},
-						  {'a','a','u','n','t','t','m','m','h','f','o','o','d','n','b'},
-						  {'j','l','w','c','q','l','d','z','m','p','m','v','d','m','r'},
-						  {'a','s','a','g','m','q','u','w','v','v','b','s','o','h','i'},
-						  {'b','w','p','l','o','t','a','n','a','d','t','p','g','n','c'},
-						  {'r','e','w','n','g','o','d','j','c','p','n','a','t','n','k'},
-						  {'e','e','o','t','w','o','s','b','q','h','a','r','r','s','a'},
-						  {'a','z','c','g','e','s','w','e','w','n','a','k','n','p','b'},
-						  {'d','i','n','n','e','r','q','o','d','l','w','d','c','a','r'},
-						  {'o','n','o','p','k','w','m','p','a','r','k','t','z','c','c'},
-						  {'q','b','f','r','o','g','m','a','m','w','p','w','e','e','y'},
-						  {'l','q','z','q','n','n','m','r','z','j','j','s','c','l','g'},
-						  {'m','o','s','g','z','c','z','e','t','d','b','o','o','t','o'},
-						  {'p','d','c','r','z','m','s','n','g','r','d','n','r','p','z'},
-						  {'o','h','n','k','z','w','a','t','e','r','j','g','t','r','a'} };
-	
-	cout<<"\n-----------------------------";
-	cout<<"\n\tTabel Huruf \n";
-	cout<<"-----------------------------\n\n";
-	for(int x=0; x<15; x++)
-	{
-		for (int y=0; y<15; y++) 
-		{ cout<<find[x][y]<<" "; }
-		cout<<endl; 
-	}
-///FUNGSI FIND WORD
+//FUNGSI FIND WORD
 int findword(char *(input))
 {
 	int found=0,jml=strlen(input),cek;
@@ -181,6 +141,47 @@ int findword(char *(input))
 	{ cout<<"TIDAK ADA"<<endl; } 	
 		
 }
+int main () 
+{
+	cout<<"\t\t\t\t\t    ------------------------ \n";
+	cout<<"\t\t\t\t\t   |  PROGRAM MENCARI KATA  |\n";
+	cout<<"\t\t\t\t\t    ------------------------ \n";
+	cout<<"\n\t\t\t\t\t              Oleh\n\n";
+	cout<<"\n\n\t\t\t\t\t     Rifqi Syamsu Zulkarnain\n\t\t\t\t\t\t    1817051032\n\n";
+	cout<<"\n\n\t\t\t\t\t         Rifqi Adiyatma\n\t\t\t\t\t\t    1817051055\n";
+	cout<<"\n\n\t\t\t\t\t      Tommy Ferdiansyah A \n\t\t\t\t\t\t    1817051072\n\n";
+	cout<<"\n\n\t\t\t\t\t     Gilang Rahman Affandi\n\t\t\t\t\t\t    1817051075\n";
+	system ("pause");
+	system ("cls");
+	cout<<"\t\t\t\t\t\t    ----------- \n";
+	cout<<"\t\t\t\t\t\t   | FIND WORD |\n";
+	cout<<"\t\t\t\t\t\t    ----------- \n";
+	char find[15][15]=  { {'t','g','b','w','w','i','n','t','e','r','w','s','e','s','n'},
+						  {'a','a','u','n','t','t','m','m','h','f','o','o','d','n','b'},
+						  {'j','l','w','c','q','l','d','z','m','p','m','v','d','m','r'},
+						  {'a','s','a','g','m','q','u','w','v','v','b','s','o','h','i'},
+						  {'b','w','p','l','o','t','a','n','a','d','t','p','g','n','c'},
+						  {'r','e','w','n','g','o','d','j','c','p','n','a','t','n','k'},
+						  {'e','e','o','t','w','o','s','b','q','h','a','r','r','s','a'},
+						  {'a','z','c','g','e','s','w','e','w','n','a','k','n','p','b'},
+						  {'d','i','n','n','e','r','q','o','d','l','w','d','c','a','r'},
+						  {'o','n','o','p','k','w','m','p','a','r','k','t','z','c','c'},
+						  {'q','b','f','r','o','g','m','a','m','w','p','w','e','e','y'},
+						  {'l','q','z','q','n','n','m','r','z','j','j','s','c','l','g'},
+						  {'m','o','s','g','z','c','z','e','t','d','b','o','o','t','o'},
+						  {'p','d','c','r','z','m','s','n','g','r','d','n','r','p','z'},
+						  {'o','h','n','k','z','w','a','t','e','r','j','g','t','r','a'} };
+	
+	cout<<"\n-----------------------------";
+	cout<<"\n\tTabel Huruf \n";
+	cout<<"-----------------------------\n\n";
+	for(int x=0; x<15; x++)
+	{
+		for (int y=0; y<15; y++) 
+		{ cout<<find[x][y]<<" "; }
+		cout<<endl; 
+	}
+
 	cout<<endl;
 	int n;
 	char input[n][15];
@@ -198,5 +199,5 @@ int findword(char *(input))
 	for (int x=0; x<n; x++)
 	{ cout<<x+1<<". ";
 	  findword(*(input+x)); }	
-	  
 }
+
