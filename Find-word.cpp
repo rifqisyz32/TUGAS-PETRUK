@@ -96,3 +96,16 @@ int findword(char *(input))
 				else 
 				{ found+=0; }
 				cek=0;
+//Vertikal Atas
+				for (int z=0; z<jml; z++) 
+				{
+					if (input[z]==find[x-z][y]) 
+					{ cek=z; }
+					else 
+					{ break; } 
+				}
+				if (cek==jml-1)
+				{ found+=1; }
+				else
+				{ found+=0; }
+				cek=0;
