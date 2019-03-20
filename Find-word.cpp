@@ -50,4 +50,24 @@ int findword(char *(input))
 						  {'m','o','s','g','z','c','z','e','t','d','b','o','o','t','o'},
 						  {'p','d','c','r','z','m','s','n','g','r','d','n','r','p','z'},
 						  {'o','h','n','k','z','w','a','t','e','r','j','g','t','r','a'} };
-						  			
+	for (int x=0; x<15; x++)
+	{
+		for (int y=0; y<15; y++)
+		{
+			if (input[0]==find[x][y])
+			{
+				
+//Horizontal Kanan
+				for (int z=0; z<jml; z++)
+				{
+					if (input[z]==find[x][y+z])
+					{ cek=z; }
+					else
+					{ break; } 
+				}		
+				if (cek==jml-1)
+				{ found+=1; }
+				else
+				{ found+=0; }
+				cek=0;
+										  			
