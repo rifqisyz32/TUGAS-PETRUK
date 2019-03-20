@@ -135,3 +135,16 @@ int findword(char *(input))
 				else
 				{ found+=0; }
 				cek=0;
+//Diagonal Kiri Bawah
+				for (int z=0; z<jml; z++)
+				{
+					if (input[z]==find[x+z][y-z])
+					{ cek=z; }
+					else
+					{ break; } 
+				}
+				if (cek==jml-1)
+				{ found+=1; }
+				else 
+				{ found+=0; }
+				cek=0;
