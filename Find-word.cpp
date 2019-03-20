@@ -171,3 +171,22 @@ int findword(char *(input))
 	{ cout<<"TIDAK ADA"<<endl; } 	
 		
 }
+	cout<<endl;
+	int n;
+	char input[n][15];
+	cout<<"\nMasukkan banyak kata yang ingin dicari : ";
+	cin>>n;
+	
+//Pencarian kata
+	cout<<"Masukkan kata yang ingin dicari :\n";
+	for (int x=0; x<n; x++)
+	{ cout<<x+1<<". ";
+	  cin>>input[x]; }
+		
+//Hasil pencarian	
+	cout<<"====================\n";
+	for (int x=0; x<n; x++)
+	{ cout<<x+1<<". ";
+	  findword(*(input+x)); }	
+	  
+}
